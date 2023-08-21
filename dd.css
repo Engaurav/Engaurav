@@ -1,0 +1,95 @@
+.topnav-main-container {
+	 display: flex;
+	 width: 100%;
+	 height: 4rem;
+	 justify-content: space-between;
+	 align-items: center;
+	 padding: 0 1rem;
+	 box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+ .topnav-main-container .topnav-brand-container div {
+	 padding: 0.5rem;
+	 border-radius: 0.5rem;
+}
+ .topnav-main-container .topnav-brand-container div img {
+	 width: 6.5rem;
+}
+ .topnav-main-container .topnav-links-container {
+	 flex: auto;
+	 margin-left: 2rem;
+	 display: flex;
+	 height: 4rem;
+	 align-items: center;
+}
+ .topnav-main-container .topnav-links-container .topnav-link {
+	 height: inherit;
+	 align-items: center;
+	 display: flex;
+	 padding: 0 0.3rem;
+	 margin: 0 0.2rem;
+	 font-weight: 600;
+	 cursor: pointer;
+	 font-size: 0.9rem;
+	 transition: ease 0.4s;
+	 position: relative;
+	 overflow: hidden;
+}
+ .topnav-main-container .topnav-links-container .topnav-link .link {
+	 z-index: 1;
+}
+ .topnav-main-container .topnav-links-container .topnav-link:before {
+	 content: "";
+	 position: absolute;
+	 width: 100%;
+	 height: 0.3rem;
+	 background: dimgray;
+	 top: 0;
+	 left: 0;
+	 transition: ease 0.4s;
+	 transform: translateX(-110%);
+}
+ .topnav-main-container .topnav-links-container .topnav-link:hover:before {
+	 transform: translateX(0%);
+}
+ .topnav-main-container .topnav-links-container .topnav-link:hover {
+	 color: dimgray;
+}
+ .topnav-main-container .topnav-links-container .topnav-link-active:before {
+	 content: "";
+	 position: absolute;
+	 width: 100%;
+	 height: 0.3rem;
+	 background: teal;
+	 top: 0;
+	 left: 0;
+	 transition: ease 0.4s;
+	 transform: translateX(0%) !important;
+}
+ .topnav-main-container .topnav-links-container .topnav-link-active {
+	 color: teal !important;
+}
+ .topnav-main-container .topnav-actions {
+	 display: flex;
+	 height: 4rem;
+	 align-items: center;
+}
+ .topnav-main-container .topnav-actions button {
+	 margin-left: 0.5rem;
+}
+ .topnav-main-container .topnav-actions .topnav-profile {
+	 margin-left: 0.5rem;
+}
+ .topnav-main-container .topnav-actions .topnav-profile div {
+	 width: 2.5rem;
+	 height: 2.5rem;
+	 border-radius: 50%;
+	 overflow: hidden;
+	 text-align: center;
+	 cursor: pointer;
+	 display: flex;
+	 background: #d1d5da;
+	 justify-content: center;
+}
+ .topnav-main-container .topnav-actions .topnav-profile div img {
+	 width: 3rem;
+}
